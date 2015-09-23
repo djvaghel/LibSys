@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
 
+  resources :book_transactions
   get 'sessions/new'
 
   root "welcome#index"

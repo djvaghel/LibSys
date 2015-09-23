@@ -49,6 +49,5 @@ end
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'devise'
-gem 'mysql'
 
-
+gem 'tzinfo-data', platforms:[:x64_mingw,:mingw,:mswin]

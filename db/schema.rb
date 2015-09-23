@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150917041439) do
+ActiveRecord::Schema.define(version: 20150923020328) do
+
+  create_table "book_transactions", force: :cascade do |t|
+    t.integer  "isbn"
+    t.string   "name"
+    t.string   "member"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "books", primary_key: "isbn", force: :cascade do |t|
     t.string   "name"
